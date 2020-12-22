@@ -1081,9 +1081,11 @@ missing_fractions.head()
 
 
 ```python
-hist = px.histogram(missing_fractions, x = "percent_missing")
-hist.layout.yaxis.title.text = 'Count of Features'
-hist.show()
+plt.figure(figsize=(6,3), dpi=90)
+missing_fractions.plot.hist(bins=20)
+plt.title('Histogram of Feature Incompleteness')
+plt.xlabel('Fraction of data missing')
+plt.ylabel('Feature count')
 ```
 
 
