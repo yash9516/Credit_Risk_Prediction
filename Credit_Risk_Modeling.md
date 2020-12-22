@@ -2134,7 +2134,7 @@ loans.info()
 
 
 ```python
-loans.head(50)
+loans.head(10)
 ```
 
 
