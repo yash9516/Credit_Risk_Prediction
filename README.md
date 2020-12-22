@@ -87,15 +87,6 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import roc_auc_score
 
 
-# creating a model
-# import tensorflow as tf
-# from tensorflow.keras.models import Sequential
-# from tensorflow.keras.layers import Dense, Dropout, Activation
-# from tensorflow.keras.constraints import max_norm
-# from tensorflow.keras.optimizers import Adam
-# from tensorflow.keras.callbacks import EarlyStopping
-# from tensorflow.keras.models import load_model
-
 # evaluation on test data
 from sklearn.metrics import classification_report,confusion_matrix
 import shap
@@ -1090,7 +1081,6 @@ missing_fractions.head()
 
 
 ```python
-#Yash cell
 hist = px.histogram(missing_fractions, x = "percent_missing")
 hist.layout.yaxis.title.text = 'Count of Features'
 hist.show()
@@ -1099,11 +1089,7 @@ hist.show()
 
 
 ```python
-# plt.figure(figsize=(6,3), dpi=90)
-# missing_fractions.plot.hist(bins=20)
-# plt.title('Histogram of Feature Incompleteness')
-# plt.xlabel('Fraction of data missing')
-# plt.ylabel('Feature count')
+
 ```
 
 From the above histogram, we see there's a large gap between features missing "some" data (&lt;20%) and those missing "lots" of data (&gt;40%). Because it's generally very difficult to accurately impute data with more than 30% missing values, we drop such columns. First store all variables missing more than 30% data in an alphabetical list:
