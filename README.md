@@ -49,13 +49,6 @@ path ='data/Loan_status_2007-2020Q3.csv'
 ```
 
 
-```python
-# # Files in dataset
-# import os
-# for dirname, _, filenames in os.walk('/kaggle/input'):
-#     for filename in filenames:
-#         print(os.path.join(dirname, filename))
-```
 
 
 ```python
