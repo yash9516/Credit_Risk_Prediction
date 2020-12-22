@@ -49,13 +49,6 @@ path ='data/Loan_status_2007-2020Q3.csv'
 ```
 
 
-```python
-# # Files in dataset
-# import os
-# for dirname, _, filenames in os.walk('/kaggle/input'):
-#     for filename in filenames:
-#         print(os.path.join(dirname, filename))
-```
 
 
 ```python
@@ -93,15 +86,6 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import roc_auc_score
 
-
-# creating a model
-# import tensorflow as tf
-# from tensorflow.keras.models import Sequential
-# from tensorflow.keras.layers import Dense, Dropout, Activation
-# from tensorflow.keras.constraints import max_norm
-# from tensorflow.keras.optimizers import Adam
-# from tensorflow.keras.callbacks import EarlyStopping
-# from tensorflow.keras.models import load_model
 
 # evaluation on test data
 from sklearn.metrics import classification_report,confusion_matrix
